@@ -10,6 +10,12 @@ const bodyparser=require('body-parser');
 const cors=require('cors');
 app.use(express.json());
 app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({
+    extended:false;
+}))
+app.use(express.urlencoded({
+    extended:false
+}))
 app.use(cors());
 
 if(process.env.NODE_ENV==='production'){
