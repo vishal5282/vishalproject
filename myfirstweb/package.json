@@ -46,5 +46,6 @@
   "engines": {
     "npm": "7.5.4",
     "node": "12.18.3"
-  }
+  },
+  "proxy":"https://employeelogin569.herokuapp.com/"
 }
